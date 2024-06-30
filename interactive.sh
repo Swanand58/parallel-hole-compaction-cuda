@@ -1,0 +1,1 @@
+srun --pty ${COMP422_PARTITION} --export=ALL --nodes=1 ${COMP422_GPU} --ntasks-per-node=1  --cpus-per-task=8 --mem-per-cpu=512 --time=00:30:00 bash

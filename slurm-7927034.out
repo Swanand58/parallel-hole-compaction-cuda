@@ -1,0 +1,35 @@
+fill: N = 10, debug_dump = 1
+*** input ***
+ 9383  -886  2777  6915  7793  8335 -5386  -492  6649  1421 
+
+count_holes returns n_holes = 3
+
+Time for serial compaction on 10 percent of N: 0 ms
+serial_fill_holes returns n_holes = 3
+
+*** h_output after serial_fill_holes ***
+ 9383  1421  2777  6915  7793  8335  6649 
+
+verification succeeded; 7 non holes!
+
+*** d_flags after marking non neg of d_input ***
+    1     0     1     1     1     1     0     0     1     1 
+
+*** d_positions after ex sum scan d_flags ***
+    0     1     1     2     3     4     5     5     5     6 
+
+*** d_output after compact_array d_positions ***
+ 9383  2777  6915  7793  8335  6649  1421     0     0     0 
+
+verification failed: h_out[7] (0) != h_in[7] (-492)
+verification failed: h_out[8] (0) != h_in[8] (-886)
+verification failed: h_out[9] (0) != h_in[9] (-5386)
+
+Time for parallel compaction on full N: 0 ms
+*** h_output on host ***
+ 9383  8335  7793  6915  6649  2777  1421     0     0     0 
+
+
+real	0m0.611s
+user	0m0.402s
+sys	0m0.180s

@@ -1,0 +1,3 @@
+fnbounds: /projects/comp422/pkgs-src/spack-2022-10/opt/spack/linux-rhel7-x86_64/gcc-11.2.0/hpctoolkit-develop-w2qslmpq7v4bpj3bqu7eemmbrimbr2nj/libexec/hpctoolkit/hpcfnbounds
+hpcrun: unable to bind to NVIDIA CUDA library libcuda.so: cannot open shared object file: No such file or directory
+

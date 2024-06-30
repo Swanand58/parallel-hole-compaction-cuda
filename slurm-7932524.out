@@ -1,0 +1,6 @@
+/var/spool/slurm/job7932524/slurm_script: line 9: 12773 Killed                  ./fill-opt -n 400000000
+
+real	0m17.411s
+user	0m10.441s
+sys	0m6.784s
+slurmstepd: error: Detected 1 oom-kill event(s) in step 7932524.batch cgroup. Some of your processes may have been killed by the cgroup out-of-memory handler.

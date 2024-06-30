@@ -1,0 +1,24 @@
+fill: N = 400000000, debug_dump = 0
+*** input ***
+<<output omitted: -d not specified>>
+
+count_holes returns n_holes = 199969545
+
+Time for serial compaction on 10 percent of N: 179 ms
+serial_fill_holes returns n_holes = 19996356
+
+*** h_output after serial_fill_holes ***
+<<output omitted: -d not specified>>
+
+<<verification omitted: -v not specified>>
+
+<<verification omitted: -v not specified>>
+
+Time for parallel compaction on full N: 23 ms
+*** h_output on host ***
+<<output omitted: -d not specified>>
+
+
+real	0m9.983s
+user	0m7.694s
+sys	0m2.247s
