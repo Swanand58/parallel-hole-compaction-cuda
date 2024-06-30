@@ -38,7 +38,7 @@ cd parallel-hole-compaction-cuda
 ## Compile the code using the following command:
 
 ```bash
-nvcc -o hole_compaction hole_compaction.cu
+nvcc -o fill fill.cu
 ```
 
 # Usage
@@ -46,7 +46,7 @@ nvcc -o hole_compaction hole_compaction.cu
 ## Run the compiled program with:
 
 ```bash
-./hole_compaction
+./fill-opt
 ```
 
 ## Parameters
